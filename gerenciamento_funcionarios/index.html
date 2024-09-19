@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Funcionários</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>Gerenciamento de Funcionários</h1>
+        </header>
+        <form id="funcionarioForm">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" class="form-control" id="idade" required>
+            </div>
+            <div class="form-group">
+                <label for="cargo">Cargo:</label>
+                <select class="form-control" id="cargo" required>
+                    <option value="Gerente">Gerente</option>
+                    <option value="Desenvolvedor">Desenvolvedor</option>
+                </select>
+            </div>
+            <div class="form-group" id="departamentoGroup">
+                <label for="departamento">Departamento:</label>
+                <input type="text" class="form-control" id="departamento">
+            </div>
+            <div class="form-group" id="linguagemGroup">
+                <label for="linguagem">Linguagem de Programação:</label>
+                <input type="text" class="form-control" id="linguagem">
+            </div>
+            <button type="submit" class="btn btn-primary">Criar Funcionário</button>
+        </form>
+        <div id="output" class="mt-4"></div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Meu JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
